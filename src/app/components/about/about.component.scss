@@ -1,0 +1,30 @@
+ 
+.about {
+  height: 100vh; 
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+}
+.about_info {
+  margin-left: 12px;
+  p{
+    @media screen and (max-width: 768px) {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 270px) and (max-width: 641px) {
+  .about {
+    display: flex;
+  }
+
+  .main-container {
+    display: block;
+    .about_info {
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
